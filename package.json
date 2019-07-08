@@ -1,16 +1,13 @@
 {
-  "name": "ib",
+  "name": "@fantasia949/ib",
   "description": "Interactive Brokers TWS (or IB Gateway) API client library for Node.js",
-  "version": "0.2.7",
+  "version": "0.2.18",
   "license": "MIT",
-  "author": {
-    "name": "Pilwon Huh",
-    "email": "pilwon@gmail.com"
-  },
-  "homepage": "https://github.com/pilwon/node-ib",
+  "author": "trung <fantasia949@gmail.com>",
+  "homepage": "https://github.com/fantasia949/node-ib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pilwon/node-ib.git"
+    "url": "git://github.com/fantasia949/node-ib.git"
   },
   "keywords": [
     "interactive",
@@ -58,5 +55,12 @@
   "scripts": {
     "prepare": "npm prune",
     "test": "grunt test"
+  },
+  "bugs": {
+    "url": "https://github.com/fantasia949/node-ib/issues"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
   }
 }
