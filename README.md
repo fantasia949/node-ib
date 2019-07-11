@@ -104,6 +104,12 @@ ib.connect()
 .unsubscribeToGroupEvents(reqId)
 .updateDisplayGroup(reqId, contract)
 .setServerLogLevel(logLevel)
+
+// new
+.reqNewsProviders()
+.reqHistoricalNews(reqId, conId, providerCodes, startDateTime, endDateTime, totalResults)
+.reqNewsArticle(reqId, providerCode, articleId, newsArticleOptions)
+.reqMatchingSymbols(reqId, pattern)
 ```
 
 ### Events
@@ -173,6 +179,13 @@ ib.connect()
 .on('updatePortfolio', function (contract, position, marketPrice, marketValue, averageCost, unrealizedPNL, realizedPNL, accountName))
 .on('displayGroupList', function(id, list))
 .on('displayGroupUpdated', function(id, contract))
+
+// new
+.on('newsProviders', providers)
+.on('historicalNews', reqId, time, providerCode, articleId, headline)
+.on('historicalNewsEnd', reqId, hasMore)
+.on('symbolSamples', reqId, contractDescriptions)
+.on('newsArticle', reqId, articleType, articleText)
 ```
 
 * [See Java client code for argument types (Boolean/Number/String)](https://github.com/pilwon/node-ib/blob/master/ref/client/EWrapper.java)
