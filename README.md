@@ -110,6 +110,7 @@ ib.connect()
 .reqHistoricalNews(reqId, conId, providerCodes, startDateTime, endDateTime, totalResults)
 .reqNewsArticle(reqId, providerCode, articleId, newsArticleOptions)
 .reqMatchingSymbols(reqId, pattern)
+.reqMktDepthExchanges()
 ```
 
 ### Events
@@ -186,6 +187,7 @@ ib.connect()
 .on('historicalNewsEnd', reqId, hasMore)
 .on('symbolSamples', reqId, contractDescriptions)
 .on('newsArticle', reqId, articleType, articleText)
+.on('mktDepthExchanges', descriptions)
 ```
 
 * [See Java client code for argument types (Boolean/Number/String)](https://github.com/pilwon/node-ib/blob/master/ref/client/EWrapper.java)

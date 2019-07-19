@@ -1,7 +1,7 @@
 {
   "name": "@fantasia949/ib",
   "description": "Interactive Brokers TWS (or IB Gateway) API client library for Node.js",
-  "version": "0.3.17",
+  "version": "0.3.23",
   "license": "MIT",
   "author": "trung <fantasia949@gmail.com>",
   "homepage": "https://github.com/fantasia949/node-ib",
